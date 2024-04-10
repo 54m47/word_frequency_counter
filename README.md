@@ -5,7 +5,8 @@ This project provides the source code for calculating word frequency in a text f
 ## Build Instructions
 
 To build the project, simply run:
-make
+
+'make'
 
 The created binary will be placed in the `exec` directory.
 
