@@ -24,9 +24,7 @@ $(OBJDIR)/%.o: $(XXHASHDIR)/%.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 create_dirs:
-	if not exist "$(OBJDIR)" mkdir "$(OBJDIR)"
-	if not exist "$(EXECDIR)" mkdir "$(EXECDIR)"
+	mkdir -p $(OBJDIR) $(EXECDIR)
 
 clean:
-	if exist "$(OBJDIR)" rmdir /s /q "$(OBJDIR)"
-	if exist "$(EXECDIR)" rmdir /s /q "$(EXECDIR)"
+	rm -rf $(OBJDIR) $(EXECDIR)
