@@ -1,8 +1,16 @@
-This is the source code for word frequency count with xxhash.
+# Word Frequency Count with xxHash
 
-Build:
-  make
-  the created binary goes to the "exec" directory.
+This project provides the source code for calculating word frequency in a text file using the xxHash algorithm.
 
-Example usage:
-  ./freq input.txt ouput.txt
+## Build Instructions
+
+To build the project, simply run:
+make
+
+The created binary will be placed in the `exec` directory.
+
+## Example Usage
+
+After building the project, you can use the binary to calculate word frequencies in a text file by running: 
+  ./exec/freq input.txt output.txt
+This command reads `input.txt`, calculates the word frequencies, and saves the results to `output.txt`.
